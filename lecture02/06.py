@@ -50,6 +50,8 @@ print("Current product DB contains the next data:")
 print(*product_db, sep="\n")
 user_answer = input("Please enter '1' if you want to use existing data, '2' if you want to add, '3' if you want to "
                     "enter new data: ")
+if user_answer == "1":
+    pass
 if user_answer == "2":
     product_db = fill_product_db(4, product_db)
 elif user_answer == "3":
