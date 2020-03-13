@@ -12,7 +12,7 @@ global_sum = 0
 
 while True:
     end = False
-    user_input = list(input("Please enter a string with positive numbers divided by space: ").split())
+    user_input = input("Please enter a string with positive numbers divided by space: ").split()
     if len(user_input) == 1 and not user_input[0].isdigit():
         exit()
     else:
