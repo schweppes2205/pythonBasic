@@ -10,7 +10,7 @@
 from datetime import datetime
 
 
-class My_date():
+class MyDate:
     def __init__(self, d, m, y):
         self.day, self.month, self.year = d, m, y
 
@@ -29,9 +29,9 @@ class My_date():
                   f"and it's correct amount of days in month and months in year.")
 
 
-my_date_1 = My_date(1, 2, 3)
+my_date_1 = MyDate(1, 2, 3)
 print(f"{my_date_1.day}.{my_date_1.month}.{my_date_1.year}")
-my_date_2 = My_date.from_string("3-2-1")
+my_date_2 = MyDate.from_string("3-2-1")
 print(f"{my_date_2.day}.{my_date_2.month}.{my_date_2.year}")
-My_date.validate_date(28, 2, 2200)
-My_date.validate_date(31, 2, 2200)
+MyDate.validate_date(28, 2, 2200)
+MyDate.validate_date(31, 2, 2200)
